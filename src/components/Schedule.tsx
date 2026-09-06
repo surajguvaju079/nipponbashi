@@ -5,7 +5,7 @@ export function Schedule() {
     <section className="schedule" id="schedule">
       <div className="wrap">
         <div className="section-head reveal">
-          <span className="kicker">スケジュール — Schedule & fees</span>
+          <span className="kicker">スケジュール — Schedule</span>
           <h2>Find your class, find your pace</h2>
           <p>Morning, evening and weekend sections run in parallel across every level.</p>
         </div>
@@ -17,7 +17,6 @@ export function Schedule() {
                   <th>Level</th>
                   <th>Format</th>
                   <th>Sessions</th>
-                  <th>Fee</th>
                 </tr>
               </thead>
               <tbody>
@@ -25,37 +24,31 @@ export function Schedule() {
                   <td className="lvl">N5</td>
                   <td>Group, 6–10 students</td>
                   <td>2× weekly, 12 wks</td>
-                  <td>$480</td>
                 </tr>
                 <tr>
                   <td className="lvl">N4</td>
                   <td>Group, 6–10 students</td>
                   <td>2× weekly, 12 wks</td>
-                  <td>$480</td>
                 </tr>
                 <tr>
                   <td className="lvl">N3</td>
                   <td>Group, 6–8 students</td>
                   <td>2× weekly, 14 wks</td>
-                  <td>$560</td>
                 </tr>
                 <tr>
                   <td className="lvl">N2</td>
                   <td>Group, 5–8 students</td>
                   <td>3× weekly, 16 wks</td>
-                  <td>$690</td>
                 </tr>
                 <tr>
                   <td className="lvl">N1</td>
                   <td>Small group, max 6</td>
                   <td>3× weekly, 16 wks</td>
-                  <td>$740</td>
                 </tr>
                 <tr>
                   <td className="lvl">Private</td>
                   <td>1-on-1, any level</td>
                   <td>By arrangement</td>
-                  <td>$65 / hr</td>
                 </tr>
               </tbody>
             </table>
