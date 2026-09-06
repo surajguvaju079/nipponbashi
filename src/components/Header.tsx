@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect } from "react";
 
 export function Header({ mobileMenuToggle }: { mobileMenuToggle: () => void }) {
@@ -20,12 +21,13 @@ export function Header({ mobileMenuToggle }: { mobileMenuToggle: () => void }) {
     <header className="nav" id="mainNav">
       <div className="nav-row">
         <a href="#top" className="brand">
-          <svg className="brand-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="20" cy="20" r="19" fill="#d3181c" />
-            <text x="20" y="27" textAnchor="middle" fontFamily="Noto Serif JP" fontSize="17" fill="#fbf9f5">
-              語
-            </text>
-          </svg>
+          <Image
+            src="/logo.jpeg"
+            alt="NipponBashi"
+            width={120}
+            height={60}
+            className="header-logo"
+          />
           <span className="brand-name">Nippon<b>Bashi</b></span>
         </a>
         <nav className="nav-links">

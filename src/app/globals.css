@@ -64,7 +64,6 @@ header.nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; backgroun
 header.nav.solid { background: rgba(251, 249, 245, 0.92); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
 .nav-row { display: flex; align-items: center; justify-content: space-between; max-width: var(--max); margin: 0 auto; padding: 20px 32px; }
 .brand { display: flex; align-items: center; gap: 12px; }
-.brand-mark { width: 32px; height: 32px; flex: none; }
 .brand-name { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.2rem; color: var(--ink); }
 .brand-name b { color: var(--red); font-weight: 700; }
 .nav-links { display: flex; gap: 32px; align-items: center; }
@@ -220,3 +219,20 @@ footer { background: var(--ink); border-top: 1px solid var(--line-on-ink); paddi
 .foot-col a:hover { color: var(--paper); }
 .foot-bottom { display: flex; justify-content: space-between; padding-top: 26px; border-top: 1px solid var(--line-on-ink); flex-wrap: wrap; gap: 10px; }
 .foot-bottom span { color: rgba(251, 249, 245, 0.4); font-size: 0.8rem; }
+
+.wrap {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 32px;
+}
+@media (max-width: 900px) {
+  .wrap {
+    padding: 0 24px;
+  }
+}
+
+.header-logo {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+}
