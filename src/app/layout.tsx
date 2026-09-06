@@ -21,7 +21,7 @@ export const metadata: Metadata = {
       "A Japanese language institute built like a bridge — carrying you from your first hiragana stroke to fluent, confident conversation.",
     images: [
       {
-        url: "http://localhost:3001/images/og-image.jpg",
+        url: "https://www.nipponbashi.com.np/images/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "NipponBashi Japanese Language Institute",
@@ -36,13 +36,13 @@ export const metadata: Metadata = {
     description:
       "A Japanese language institute built like a bridge — carrying you from your first hiragana stroke to fluent, confident conversation.",
   },
-  metadataBase: new URL("http://localhost:3001"),
+  metadataBase: new URL("https://nipponbashi.com.np"),
   robots: {
     index: true,
     follow: true,
   },
   alternates: {
-    canonical: "http://localhost:3001/",
+    canonical: "https://www.nipponbashi.com.np",
   },
 };
 

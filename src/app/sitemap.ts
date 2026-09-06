@@ -7,7 +7,7 @@ export const revalidate = 0;
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "http://localhost:3001/",
+      url: "https://www.nipponbashi.com.np/",
       lastModified: new Date().toISOString(),
     },
   ];

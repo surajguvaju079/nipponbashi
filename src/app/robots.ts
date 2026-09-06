@@ -12,6 +12,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "http://localhost:3001/sitemap.xml",
+    sitemap: "https://www.nipponbashi.com.np/sitemap.xml",
   };
 }
