@@ -30,6 +30,7 @@ export function Footer() {
         </div>
         <div className="foot-bottom">
           <span>&copy; 2026 NipponBashi Japanese Language Institute.</span>
+          <span>Pandubazaar, Suryabinayak, Bhaktapur · Near Everest Bank</span>
           <span>Privacy · Terms</span>
         </div>
       </div>

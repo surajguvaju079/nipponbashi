@@ -2,31 +2,18 @@
 
 import { useEffect } from "react";
 
-export function Header() {
-  // Mobile menu event listeners
+export function Header({ mobileMenuToggle }: { mobileMenuToggle: () => void }) {
   useEffect(() => {
-    const burger = document.getElementById("burgerBtn") as HTMLElement;
-    const mobileMenu = document.getElementById("mobileMenu") as HTMLElement;
-
-    if (burger && mobileMenu) {
-      burger.addEventListener("click", () => {
-        document.body.style.overflow = "hidden";
-      });
-
-      // Close menu on link click
-      const menuLinks = document.querySelectorAll<HTMLElement>(
-        ".mobile-menu a"
-      );
-      menuLinks.forEach((a) =>
-        a.addEventListener("click", () => {
-          document.body.style.overflow = "auto";
-        })
-      );
-    }
-
-    return () => {
-      // Cleanup
+    const nav = document.getElementById("mainNav") as HTMLElement;
+    const handleScroll = () => {
+      if (window.scrollY > 40) {
+        nav.classList.add("solid");
+      } else {
+        nav.classList.remove("solid");
+      }
     };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
@@ -54,6 +41,7 @@ export function Header() {
           className="burger"
           id="burgerBtn"
           aria-label="Open menu"
+          onClick={mobileMenuToggle}
         >
           <span></span><span></span><span></span>
         </button>

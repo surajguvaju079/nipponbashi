@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Header } from "@/components/Header";
 import { MobileMenu } from "@/components/MobileMenu";
 import { Hero } from "@/components/Hero";
@@ -15,41 +15,39 @@ import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 
 export default function Home() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = (open: boolean) => {
+    setIsMenuOpen(open);
+  };
+
   useEffect(() => {
-    const revealEls = document.querySelectorAll(".reveal");
-    const io = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("in");
-            io.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.15 }
-    );
-    revealEls.forEach((el) => io.observe(el));
-    return () => {
-      revealEls.forEach((el) => io.unobserve(el));
+    const handleScroll = () => {
+      const nav = document.getElementById("mainNav") as HTMLElement;
+      if (window.scrollY > 40) {
+        nav.classList.add("solid");
+      } else {
+        nav.classList.remove("solid");
+      }
     };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <html lang="en">
-      <body>
-        <Header />
-        <MobileMenu />
-        <Hero />
-        <Philosophy />
-        <Courses />
-        <Pillars />
-        <Teachers />
-        <Testimonials />
-        <Schedule />
-        <CtaBand />
-        <Contact />
-        <Footer />
-      </body>
-    </html>
+    <>
+      <Header mobileMenuToggle={() => toggleMenu(true)} />
+      <MobileMenu isOpen={isMenuOpen} onClose={() => toggleMenu(false)} />
+      <Hero />
+      <Philosophy />
+      <Courses />
+      <Pillars />
+      <Teachers />
+      <Testimonials />
+      <Schedule />
+      <CtaBand />
+      <Contact />
+      <Footer />
+    </>
   );
 }

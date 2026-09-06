@@ -26,7 +26,7 @@ export function Contact() {
             </svg>
             <div>
               <h5>Address</h5>
-              <p>142 Bashi Lane, Japantown District</p>
+              <p>Pandubazaar, Suryabinayak, Bhaktapur<br/>Near Everest Bank</p>
             </div>
           </div>
           <div className="info-line">
@@ -40,7 +40,10 @@ export function Contact() {
             </svg>
             <div>
               <h5>Phone</h5>
-              <p>+1 (415) 555-0142</p>
+              <p>01-5708096</p>
+              <p>9841113804</p>
+              <p>9768519494</p>
+              <p>9768519405</p>
             </div>
           </div>
           <div className="info-line">
@@ -55,7 +58,7 @@ export function Contact() {
             </svg>
             <div>
               <h5>Email</h5>
-              <p>hello@nipponbashi.jp</p>
+              <p>nipponbashi05@gmail.com</p>
             </div>
           </div>
           <div className="info-line">
