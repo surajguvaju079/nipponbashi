@@ -85,8 +85,12 @@ header.nav.solid { background: rgba(251, 249, 245, 0.92); backdrop-filter: blur(
 }
 
 /* Mobile menu - must have display: none in closed state */
-.mobile-menu { display: none; position: fixed; inset: 0; background: var(--ink); z-index: 99; flex-direction: column; align-items: center; justify-content: center; gap: 30px; }
+.mobile-menu { display: none; position: fixed; inset: 0; background: var(--ink); z-index: 99; flex-direction: column; align-items: center; justify-content: center; gap: 30px; padding-top: 80px; }
 .mobile-menu.open { display: flex; }
+.mobile-menu a { color: var(--paper) !important; font-size: 0.9rem; transition: color .25s ease; }
+.mobile-menu a:hover { color: var(--gold-soft) !important; }
+.mobile-menu .btn-primary { color: var(--paper) !important; }
+.mobile-close { color: var(--paper) !important; font-size: 2rem; line-height: 1; }
 
 /* Hero */
 .hero { position: relative; background: var(--ink); padding: 150px 0 0 0; overflow: hidden; }
