@@ -32,7 +32,7 @@ export function Header({ mobileMenuToggle }: { mobileMenuToggle: () => void }) {
             alt="NipponBashi"
             className="header-logo"
             width={120}
-            height={60}
+            height={30}
           />
         </a>
         <nav className="nav-links">
