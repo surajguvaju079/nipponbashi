@@ -31,23 +31,19 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title: "NipponBashi — Japanese Language Institute",
     description:
       "A Japanese language institute built like a bridge — carrying you from your first hiragana stroke to fluent, confident conversation.",
-    images: [
-      "http://localhost:3001/images/og-image.jpg",
-    ],
   },
   metadataBase: new URL("http://localhost:3001"),
-  additionalMetadata: [
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      name: "NipponBashi",
-      description: "A Japanese language institute built like a bridge — carrying you from your first hiragana stroke to fluent, confident conversation.",
-    },
-  ],
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: "http://localhost:3001/",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
