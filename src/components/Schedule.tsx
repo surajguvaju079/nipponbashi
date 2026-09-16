@@ -23,27 +23,17 @@ export function Schedule() {
                 <tr>
                   <td className="lvl">N5</td>
                   <td>Group, 6–10 students</td>
-                  <td>2× weekly, 12 wks</td>
+                  <td>5× weekly - 2 hours, 12 wks</td>
                 </tr>
                 <tr>
                   <td className="lvl">N4</td>
                   <td>Group, 6–10 students</td>
-                  <td>2× weekly, 12 wks</td>
+                  <td>5× weekly - 2 hours, 12 wks</td>
                 </tr>
                 <tr>
                   <td className="lvl">N3</td>
                   <td>Group, 6–8 students</td>
-                  <td>2× weekly, 14 wks</td>
-                </tr>
-                <tr>
-                  <td className="lvl">N2</td>
-                  <td>Group, 5–8 students</td>
-                  <td>3× weekly, 16 wks</td>
-                </tr>
-                <tr>
-                  <td className="lvl">N1</td>
-                  <td>Small group, max 6</td>
-                  <td>3× weekly, 16 wks</td>
+                  <td>5× weekly - 2 hours, 14 wks</td>
                 </tr>
                 <tr>
                   <td className="lvl">Private</td>

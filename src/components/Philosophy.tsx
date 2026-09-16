@@ -31,7 +31,7 @@ export function Philosophy() {
             A language school named after a bridge, because that&apos;s exactly what learning one is.
           </h3>
           <p>
-            NipponBashi was founded in 2011 by a small group of translators and teachers who kept noticing the same thing: students&apos;t struggle with grammar tables, they struggled with the gap between "knowing" and "using" it.
+            NipponBashi was founded  by a small group of translators and teachers who kept noticing the same thing: students&apos;t struggle with grammar tables, they struggled with the gap between "knowing" and "using" it.
           </p>
           <p>
             So we built our curriculum like a bridge&mdash; short, well-anchored spans instead of one long leap. Every level connects directly to the next, every lesson is grounded in conversation you&apos;ll actually have, and every teacher is trained to walk beside you, not just ahead of you.

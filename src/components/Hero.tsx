@@ -46,10 +46,9 @@ export function Hero() {
       </div>
       <div className="hero-stats">
         <div className="stats-row">
-          <div className="stat"><b>14</b><span>Years teaching</span></div>
           <div className="stat"><b>1,200+</b><span>Students guided</span></div>
           <div className="stat"><b>96%</b><span>JLPT pass rate</span></div>
-          <div className="stat"><b>N5–N1</b><span>Full JLPT ladder</span></div>
+          <div className="stat"><b>N5–N3</b><span>Full JLPT ladder</span></div>
         </div>
       </div>
     </section>
