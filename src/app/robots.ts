@@ -13,5 +13,6 @@ export default function robots(): MetadataRoute.Robots {
       },
     ],
     sitemap: "https://www.nipponbashi.com.np/sitemap.xml",
+    host: "https://www.nipponbashi.com.np",
   };
 }

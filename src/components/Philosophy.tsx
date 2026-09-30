@@ -1,9 +1,8 @@
 "use client";
 
-/* eslint-disable react/no-unescaped-entities */
 export function Philosophy() {
   return (
-    <section className="philosophy">
+    <section className="philosophy" id="philosophy">
       <div className="wrap phi-grid">
         <div className="phi-visual reveal">
           <svg
@@ -26,16 +25,32 @@ export function Philosophy() {
           </svg>
         </div>
         <div className="phi-text reveal">
-          <span className="phi-quote-mark">&ldquo;</span>
-          <h3>
-            A language school named after a bridge, because that&apos;s exactly what learning one is.
-          </h3>
+          <span className="kicker">私たちについて — About NipponBashi</span>
+          <h2>Build Japanese one connected step at a time</h2>
           <p>
-            NipponBashi was founded in 2011 by a small group of translators and teachers who kept noticing the same thing: students&apos;t struggle with grammar tables, they struggled with the gap between "knowing" and "using" it.
+            NipponBashi is a Japanese language institute in Pandubazaar,
+            Suryabinayak, Bhaktapur. Its learning path connects each stage of
+            Japanese study, from the writing systems and essential grammar to
+            reading, listening, and conversation.
           </p>
           <p>
-            So we built our curriculum like a bridge&mdash; short, well-anchored spans instead of one long leap. Every level connects directly to the next, every lesson is grounded in conversation you&apos;ll actually have, and every teacher is trained to walk beside you, not just ahead of you.
+            The aim is simple: help students understand what they are learning,
+            use it in practical communication, and know what comes next.
           </p>
+          <div className="phi-differentiators">
+            <div className="phi-diff-item">
+              <h4>Conversation-first approach</h4>
+              <p>Lessons are grounded in real conversations you&apos;ll actually have, not just textbook drills.</p>
+            </div>
+            <div className="phi-diff-item">
+              <h4>Progressive level structure</h4>
+              <p>Every level connects directly to the next. You won&apos;t repeat content or face random gaps between stages.</p>
+            </div>
+            <div className="phi-diff-item">
+              <h4>Balanced language skills</h4>
+              <p>Reading, listening, vocabulary, grammar, and conversation develop together.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

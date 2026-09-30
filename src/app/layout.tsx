@@ -1,29 +1,32 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+/* eslint-disable @next/next/no-page-custom-font */
+
 export const metadata: Metadata = {
   title: {
-    default: "NipponBashi — Japanese Language Institute",
+    default: "Japanese Language Classes in Bhaktapur | NipponBashi",
     template: "%s | NipponBashi",
   },
   description:
-    "A Japanese language institute built like a bridge — carrying you from your first hiragana stroke to fluent, confident conversation.",
+    "Learn Japanese in Suryabinayak, Bhaktapur. Explore NipponBashi JLPT N5, N4 and N3 language courses and focused JLPT preparation.",
   keywords: [
-    "Japanese language school",
-    "Japanese classes",
+    "Japanese language institute Bhaktapur",
+    "Japanese classes Bhaktapur",
     "JLPT preparation",
     "Japanese conversation",
     "NipponBashi",
   ],
   openGraph: {
-    title: "NipponBashi — Japanese Language Institute",
+    title: "Japanese Language Classes in Bhaktapur | NipponBashi",
     description:
-      "A Japanese language institute built like a bridge — carrying you from your first hiragana stroke to fluent, confident conversation.",
+      "Explore JLPT N5, N4 and N3 Japanese language courses and focused JLPT preparation at NipponBashi in Bhaktapur.",
+    url: "https://www.nipponbashi.com.np/",
     images: [
       {
-        url: "https://www.nipponbashi.com.np/images/og-image.jpg",
-        width: 1200,
-        height: 630,
+        url: "/logo.jpeg",
+        width: 1600,
+        height: 769,
         alt: "NipponBashi Japanese Language Institute",
       },
     ],
@@ -31,18 +34,36 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
-    card: "summary",
-    title: "NipponBashi — Japanese Language Institute",
+    card: "summary_large_image",
+    title: "Japanese Language Classes in Bhaktapur | NipponBashi",
     description:
-      "A Japanese language institute built like a bridge — carrying you from your first hiragana stroke to fluent, confident conversation.",
+      "Explore JLPT N5, N4 and N3 Japanese language courses and focused JLPT preparation in Bhaktapur.",
+    images: ["/logo.jpeg"],
   },
-  metadataBase: new URL("https://nipponbashi.com.np"),
+  metadataBase: new URL("https://www.nipponbashi.com.np"),
   robots: {
     index: true,
     follow: true,
   },
   alternates: {
-    canonical: "https://www.nipponbashi.com.np",
+    canonical: "/",
+  },
+};
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": ["EducationalOrganization", "LocalBusiness"],
+  name: "NipponBashi Japanese Language Institute",
+  url: "https://www.nipponbashi.com.np/",
+  logo: "https://www.nipponbashi.com.np/logo.jpeg",
+  email: "mailto:nipponbashi05@gmail.com",
+  telephone: ["01-5708096", "9841113804", "9768519494", "9768519405"],
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Pandubazaar, near Everest Bank",
+    addressLocality: "Suryabinayak",
+    addressRegion: "Bhaktapur",
+    addressCountry: "NP",
   },
 };
 
@@ -58,7 +79,15 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           rel="stylesheet"
         />
       </head>
-      <body className="min-h-full">{children}</body>
+      <body className="min-h-full">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema).replace(/</g, "\\u003c"),
+          }}
+        />
+        {children}
+      </body>
     </html>
   );
 }
