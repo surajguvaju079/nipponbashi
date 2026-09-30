@@ -5,44 +5,24 @@ export function Schedule() {
     <section className="schedule" id="schedule">
       <div className="wrap">
         <div className="section-head reveal">
-          <span className="kicker">スケジュール — Schedule</span>
-          <h2>Find your class, find your pace</h2>
-          <p>Morning, evening and weekend sections run in parallel across every level.</p>
+          <span className="kicker">スケジュール — Class availability</span>
+          <h2>Find a class that matches your level</h2>
+          <p>
+            Class times and new intakes can change. Contact NipponBashi for the
+            current N5, N4, N3, and JLPT preparation schedule.
+          </p>
         </div>
-        <div className="sched-wrap reveal">
-          <div className="sched-table">
-            <table className="sched">
-              <thead>
-                <tr>
-                  <th>Level</th>
-                  <th>Format</th>
-                  <th>Sessions</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td className="lvl">N5</td>
-                  <td>Group, 6–10 students</td>
-                  <td>5× weekly - 2 hours, 12 wks</td>
-                </tr>
-                <tr>
-                  <td className="lvl">N4</td>
-                  <td>Group, 6–10 students</td>
-                  <td>5× weekly - 2 hours, 12 wks</td>
-                </tr>
-                <tr>
-                  <td className="lvl">N3</td>
-                  <td>Group, 6–8 students</td>
-                  <td>5× weekly - 2 hours, 14 wks</td>
-                </tr>
-                <tr>
-                  <td className="lvl">Private</td>
-                  <td>1-on-1, any level</td>
-                  <td>By arrangement</td>
-                </tr>
-              </tbody>
-            </table>
+        <div className="schedule-panel reveal">
+          <div>
+            <span className="schedule-label">Current timetable</span>
+            <h3>Confirm the latest intake before visiting</h3>
+            <p>
+              Tell us your current Japanese level and the course you are
+              interested in. The institute can confirm suitable available
+              classes directly.
+            </p>
           </div>
+          <a href="#contact" className="btn btn-primary">Contact the institute</a>
         </div>
       </div>
     </section>

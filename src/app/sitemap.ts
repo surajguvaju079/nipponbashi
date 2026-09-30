@@ -8,7 +8,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: "https://www.nipponbashi.com.np/",
-      lastModified: new Date().toISOString(),
+      changeFrequency: "monthly",
+      priority: 1,
     },
   ];
 }
