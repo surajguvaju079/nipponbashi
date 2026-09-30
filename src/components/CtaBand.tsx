@@ -1,6 +1,5 @@
 "use client";
 
-/* eslint-disable react/no-unescaped-entities */
 export function CtaBand() {
   return (
     <div className="cta-band">
@@ -14,12 +13,13 @@ export function CtaBand() {
         <path d="M0 4 L1440 4" />
       </svg>
       <div className="wrap reveal">
-        <h2>Your first step across starts with one lesson.</h2>
+        <h2>Not sure which Japanese course fits?</h2>
         <p>
-          Book a free 25-minute trial and we'll place you at the right level — no pressure, no obligation.
+          Share your current level and learning goal with NipponBashi to ask
+          about the most suitable available class.
         </p>
         <a href="#contact" className="btn btn-primary">
-          Book your free trial
+          Make an enquiry
         </a>
       </div>
     </div>

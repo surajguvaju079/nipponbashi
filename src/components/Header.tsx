@@ -3,7 +3,13 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-export function Header({ mobileMenuToggle }: { mobileMenuToggle: () => void }) {
+export function Header({
+  isMenuOpen,
+  mobileMenuToggle,
+}: {
+  isMenuOpen: boolean;
+  mobileMenuToggle: () => void;
+}) {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -29,7 +35,7 @@ export function Header({ mobileMenuToggle }: { mobileMenuToggle: () => void }) {
         <a href="#top" className="brand">
           <Image
             src={logoSrc}
-            alt="NipponBashi"
+            alt="NipponBashi Japanese Language Institute"
             className="header-logo"
             width={120}
             height={20}
@@ -38,16 +44,18 @@ export function Header({ mobileMenuToggle }: { mobileMenuToggle: () => void }) {
         <nav className="nav-links">
           <a href="#philosophy">About</a>
           <a href="#courses">Courses</a>
-          <a href="#method">Method</a>
-          <a href="#teachers">Teachers</a>
-          <a href="#schedule">Schedule</a>
+          <a href="#preparation">Preparation</a>
+          <a href="#method">Why us</a>
+          <a href="#schedule">Classes</a>
           <a href="#contact">Contact</a>
         </nav>
-        <a href="#contact" className="nav-cta">Book a trial lesson</a>
+        <a href="#contact" className="nav-cta">Contact us</a>
         <button
           className="burger"
           id="burgerBtn"
           aria-label="Open menu"
+          aria-controls="mobileMenu"
+          aria-expanded={isMenuOpen}
           onClick={mobileMenuToggle}
         >
           <span></span><span></span><span></span>

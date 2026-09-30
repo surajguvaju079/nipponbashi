@@ -2,7 +2,7 @@
 
 export function Hero() {
   return (
-    <section className="hero">
+    <section className="hero" id="top">
       <svg className="hero-bridge" viewBox="0 0 1440 340" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M0 175 C 260 150, 520 138, 720 138 C 920 138, 1180 150, 1440 175" stroke="#d3181c" strokeWidth="3" fill="none" opacity="0.9" />
         <rect x="712" y="20" width="16" height="230" fill="#d3181c" />
@@ -33,24 +33,24 @@ export function Hero() {
       </svg>
       <div className="hero-inner">
         <span className="hero-eyebrow-jp">日本語学院 — 二つの言葉をつなぐ橋</span>
-        <h1>Nippon<span className="rule-b">Bashi</span></h1>
+        <h1>Japanese classes in <span className="rule-b">Bhaktapur</span></h1>
         <p className="hero-sub">
-          A Japanese language institute built like a bridge — carrying you from your first hiragana stroke to fluent, confident conversation.
+          Learn Japanese through a clear path from JLPT N5 foundations to N4
+          and N3, with focused JLPT preparation when you need it.
         </p>
         <div className="btn-row">
           <a href="#contact" className="btn btn-primary">
-            Book a trial lesson
+            Ask about classes
           </a>
           <a href="#courses" className="btn btn-ghost">See our courses</a>
         </div>
       </div>
-      <div className="hero-stats">
-        <div className="stats-row">
-          <div className="stat"><b>14</b><span>Years teaching</span></div>
-          <div className="stat"><b>1,200+</b><span>Students guided</span></div>
-          <div className="stat"><b>96%</b><span>JLPT pass rate</span></div>
-          <div className="stat"><b>N5–N1</b><span>Full JLPT ladder</span></div>
-        </div>
+      <div className="hero-path" aria-label="Japanese language learning path">
+        <span>Start with N5</span>
+        <span aria-hidden="true">→</span>
+        <span>Continue to N4</span>
+        <span aria-hidden="true">→</span>
+        <span>Progress to N3</span>
       </div>
     </section>
   );
